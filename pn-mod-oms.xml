@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="pn"
+           fetch="https://github.com/PureNexusProject/" />
+
+  <remote name="me"
+           fetch="https://github.com/nathanchance/" />
+
+
+  <!-- Remove Layers repos -->
+  <remove-project path="frameworks/base" name="purenexus_frameworks_base" />
+  <remove-project path="frameworks/native" name="purenexus_frameworks_native" />
+  <remove-project path="external/sepolicy" name="purenexus_external_sepolicy" />
+  <remove-project path="build" name="purenexus_build" />
+
+
+  <!-- Add OMS repos -->
+  <project path="frameworks/base" name="purenexus_frameworks_base" remote="me" revision="oms" />
+  <project path="frameworks/native" name="purenexus_frameworks_native" remote="me" revision="oms" />
+  <project path="external/sepolicy" name="purenexus_external_sepolicy" remote="me" revision="oms" />
+  <project path="build" name="purenexus_build" groups="pdk" remote="me" revision="oms" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+
+  <!-- Device Source -->
+  <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="pn" revision="mm2" />
+  <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead" remote="pn" revision="mm2" />
+
+
+  <!-- Kernel Source -->
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="pn" revision="mm2" />
+  <project path="kernel/lge/bullhead" name="android_kernel_lge_bullhead" groups="device,bullhead" remote="pn" revision="mm2" />
+
+
+  <!-- Proprietary Vendors -->
+  <project path="vendor/moto" name="proprietary_vendor_moto" remote="pn" revision="mm2" />
+
+</manifest>
