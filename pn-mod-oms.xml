@@ -9,16 +9,18 @@
 
   <!-- Remove Layers repos -->
   <remove-project path="frameworks/base" name="purenexus_frameworks_base" />
+  <remove-project path="packages/apps/Settings" name="purenexus_packages_apps_Settings" />
   <remove-project path="frameworks/native" name="purenexus_frameworks_native" />
   <remove-project path="external/sepolicy" name="purenexus_external_sepolicy" />
   <remove-project path="build" name="purenexus_build" />
 
 
   <!-- Add OMS repos -->
-  <project path="frameworks/base" name="purenexus_frameworks_base" remote="me" revision="oms" />
-  <project path="frameworks/native" name="purenexus_frameworks_native" remote="me" revision="oms" />
-  <project path="external/sepolicy" name="purenexus_external_sepolicy" remote="me" revision="oms" />
-  <project path="build" name="purenexus_build" groups="pdk" remote="me" revision="oms" >
+  <project path="frameworks/base" name="purenexus_frameworks_base" remote="me" revision="oms3" />
+  <project path="frameworks/native" name="purenexus_frameworks_native" remote="me" revision="oms3" />
+  <project path="external/sepolicy" name="purenexus_external_sepolicy" remote="me" revision="oms3" />
+  <project path="packages/apps/Settings" name="purenexus_packages_apps_Settings" remote="me" revision="oms3" />
+  <project path="build" name="purenexus_build" groups="pdk" remote="me" revision="oms3" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
