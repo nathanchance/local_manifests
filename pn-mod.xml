@@ -14,4 +14,7 @@
   <!-- Proprietary Vendors -->
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="pn" revision="mm2" />
 
+  <!-- Add Masquerade until Ezio brings it in -->
+  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="master" />
+
 </manifest>
