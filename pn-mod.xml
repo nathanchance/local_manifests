@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="pn"
-           fetch="https://github.com/PureNexusProject/" />
+           fetch="https://github.com/PureNexusProject-Legacy/" />
 
   <!-- Device Source -->
   <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="pn" revision="mm2" />
