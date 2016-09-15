@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="pn"
+           fetch="https://github.com/PureNexusProject/" />
+
+  <!-- Device Source -->
+  <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="pn" revision="n" />
+
+  <!-- Kernel Source -->
+  <project path="kernel/lge/bullhead" name="android_kernel_lge_bullhead" remote="pn" revision="n" />
+
+  <!-- Proprietary Vendors -->
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="pn" revision="n" />
+</manifest>
