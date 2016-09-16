@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="px"
-           fetch="https://github.com/PureExperienceProject/" />
+  <remote name="pureupstream"
+           fetch="https://github.com/PureAndroidProject/" />
 
   <!-- Device Source -->
-  <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="px" revision="n" />
+  <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="pureupstream" revision="n" />
 
   <!-- Kernel Source -->
-  <project path="kernel/lge/bullhead" name="android_kernel_lge_bullhead" remote="px" revision="n" />
+  <project path="kernel/lge/bullhead" name="android_kernel_lge_bullhead" remote="pureupstream" revision="n" />
 
   <!-- Proprietary Vendors -->
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="px" revision="n" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="pureupstream" revision="n" />
 </manifest>
