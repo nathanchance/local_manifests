@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+   <remove-project name="platform/prebuilts/ninja/linux-x86" />
+   <project path="prebuilts/ninja/linux-x86" name="Flash-ROM/prebuilts_ninja" remote="github" revision="n7.1.1" />
+   <remove-project name="platform/prebuilts/misc" />
+   <project path="prebuilts/misc" name="Flash-ROM/prebuilts_misc" remote="github" revision="n7.1.1" />
+   <project path="kernel/huawei/angler" name="Flash-ROM/kernel_huawei_angler" remote="github" revision="n7.1.1" />
+   <project path="device/huawei/angler" name="Flash-ROM/device_huawei_angler" remote="github" revision="twrp-n7.1.1-f2fs" />
+   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="omnirom" revision="android-7.1" />
+</manifest>
