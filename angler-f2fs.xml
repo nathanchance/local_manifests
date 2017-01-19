@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-   <remove-project name="platform/prebuilts/ninja/linux-x86" />
-   <project path="prebuilts/ninja/linux-x86" name="Flash-ROM/prebuilts_ninja" remote="github" revision="n7.1.1" />
-   <remove-project name="platform/prebuilts/misc" />
-   <project path="prebuilts/misc" name="Flash-ROM/prebuilts_misc" remote="github" revision="n7.1.1" />
-   <project path="kernel/huawei/angler" name="Flash-ROM/kernel_huawei_angler" remote="github" revision="n7.1.1" />
-   <project path="device/huawei/angler" name="Flash-ROM/device_huawei_angler" remote="github" revision="twrp-n7.1.1-f2fs" />
-   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="omnirom" revision="android-7.1" />
+   <remote name="flash-gh"
+           revision="twrp-n7.1.1"
+           fetch="https://github.com/Flash-ROM" />
+
+   <remove-project name="android_external_f2fs-tools" />
+   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="flash-gh" />
+   <remove-project name="android_bootable_recovery" />
+   <project path="bootable/recovery" name="bootable_recovery" remote="flash-gh" />
+   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="flash-gh" revision="n7.1.1" />
+   <project path="device/huawei/angler" name="device_huawei_angler" remote="flash-gh" />
 </manifest>
