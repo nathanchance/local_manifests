@@ -8,6 +8,5 @@
    <project path="external/f2fs-tools" name="external_f2fs-tools" remote="flash-gh" />
    <remove-project name="android_bootable_recovery" />
    <project path="bootable/recovery" name="bootable_recovery" remote="flash-gh" />
-   <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="flash-gh" revision="n7.1.1" />
    <project path="device/huawei/angler" name="device_huawei_angler" remote="flash-gh" />
 </manifest>
