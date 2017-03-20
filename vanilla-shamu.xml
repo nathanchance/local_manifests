@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="flash-gl"
+            revision="n7.1.1"
+            fetch="ssh://git@gitlab.com/Flash-ROM/" />
+
+    <remove-project name="DespairFactor/arm-eabi-6.x" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="arm-eabi-6.x" remote="flash-gl" />
+</manifest>
