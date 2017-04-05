@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="flash-gh"
+            fetch="ssh://git@github.com/Flash-ROM/" />
+
+    <remove-project name="android_external_f2fs-tools" />
+    <project path="external/f2fs-tools" name="external_f2fs-tools" remote="flash-gh" revision="n7.1.2-twrp" />
+    <remove-project name="android_bootable_recovery" />
+    <project path="bootable/recovery" name="bootable_recovery" remote="flash-gh" revision="n7.1.2-twrp" />
+    <project path="device/huawei/angler" name="device_huawei_angler" remote="flash-gh" revision="n7.1.2-twrp" />
+    <project path="device/moto/shamu" name="device_moto_shamu" remote="flash-gh" revision="n7.1.2-twrp" />
+</manifest>
