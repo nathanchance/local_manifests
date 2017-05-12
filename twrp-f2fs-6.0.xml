@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="flash-gh"
-            fetch="ssh://git@github.com/Flash-ROM/" />
+    <remote name="flash-kernel"
+            fetch="ssh://git@github.com/Flash-Kernel/" />
+
+    <remote name="nathanchance"
+            fetch="ssh://git@github.com/nathanchance/"
+            revision="android-6.0" />
 
     <remove-project name="android_external_f2fs-tools" />
-    <project path="external/f2fs-tools" name="external_f2fs-tools" remote="flash-gh" revision="m6.0.1-twrp" />
+    <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="nathanchance" />
     <remove-project name="android_bootable_recovery" />
-    <project path="bootable/recovery" name="bootable_recovery" remote="flash-gh" revision="n7.1.1-twrp" />
-    <project path="device/huawei/angler" name="device_huawei_angler" remote="flash-gh" revision="m6.0.1-twrp" />
-    <project path="device/moto/shamu" name="device_moto_shamu" remote="flash-gh" revision="m6.0.1-twrp" />
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="nathanchance" revision="android-7.1" />
+    <project path="device/huawei/angler" name="android_device_huawei_angler" remote="nathanchance" />
+    <project path="device/moto/shamu" name="android_device_moto_shamu" remote="nathanchance" />
 </manifest>
