@@ -10,4 +10,5 @@
     <project path="bootable/recovery" name="android_bootable_recovery" remote="nathanchance" revision="android-7.1" />
     <project path="device/huawei/angler" name="android_device_huawei_angler" remote="nathanchance" />
     <project path="device/moto/shamu" name="android_device_moto_shamu" remote="nathanchance" />
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-linux-gnueabi-7.x" name="gcc-prebuilts" remote="nathanchance" revision="personal-linaro-7.x" />
 </manifest>
