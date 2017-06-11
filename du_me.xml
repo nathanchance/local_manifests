@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="nathanchance"
+            fetch="ssh://git@github.com/nathanchance/"
+            revision="n7x" />
+
+    <!-- Remove projects -->
+    <remove-project name="android_build" />
+    <remove-project name="android_external_skia" />
+    <remove-project name="android_frameworks_base" />
+    <remove-project name="android_frameworks_native" />
+    <remove-project name="android_vendor_du" />
+    <remove-project name="DirtyUnicorns/android_device_huawei_angler" />
+    <remove-project name="platform/external/sqlite" />
+    <remove-project name="platform/external/zlib" />
+
+    <!-- Add my repos -->
+    <project path="build" name="android_build" remote="nathanchance">
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+    <project path="device/huawei/angler" name="android_device_huawei_angler" remote="nathanchance" />
+    <project path="external/skia" name="android_external_skia" remote="nathanchance" />
+    <project path="external/sqlite" name="android_external_sqlite" remote="nathanchance" />
+    <project path="external/zlib" name="android_external_zlib" remote="nathanchance" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="nathanchance" />
+    <project path="frameworks/native" name="android_frameworks_native" remote="nathanchance" />
+    <project path="prebuilts/clang/host/linux-x86/sdclang-3.8" name="prebuilts_clang_host_linux-x86_sdclang-3.8" remote="nathanchance" />
+    <project path="vendor/du" name="android_vendor_du" remote="nathanchance" />
+</manifest>
