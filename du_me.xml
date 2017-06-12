@@ -9,6 +9,9 @@
     <remove-project name="android_external_skia" />
     <remove-project name="android_frameworks_base" />
     <remove-project name="android_frameworks_native" />
+    <remove-project name="android_packages_apps_DUI" />
+    <remove-project name="android_packages_apps_DU-Tweaks" />
+    <remove-project name="android_system_core" />
     <remove-project name="android_vendor_du" />
     <remove-project name="DirtyUnicorns/android_device_huawei_angler" />
     <remove-project name="platform/external/sqlite" />
@@ -24,6 +27,9 @@
     <project path="external/zlib" name="android_external_zlib" remote="nathanchance" />
     <project path="frameworks/base" name="android_frameworks_base" remote="nathanchance" />
     <project path="frameworks/native" name="android_frameworks_native" remote="nathanchance" />
+    <project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="nathanchance" />
+    <project path="packages/apps/DU-Tweaks" name="android_packages_apps_DU-Tweaks" remote="nathanchance" />
     <project path="prebuilts/clang/host/linux-x86/sdclang-3.8" name="prebuilts_clang_host_linux-x86_sdclang-3.8" remote="nathanchance" />
+    <project path="system/core" name="android_system_core" remote="nathanchance" />
     <project path="vendor/du" name="android_vendor_du" remote="nathanchance" />
 </manifest>
