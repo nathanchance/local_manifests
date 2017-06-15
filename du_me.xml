@@ -4,6 +4,10 @@
             fetch="ssh://git@github.com/nathanchance/"
             revision="n7x" />
 
+    <remote name="opengapps"
+            fetch="https://github.com/opengapps/"
+            revision="master" />
+
     <!-- Remove projects -->
     <remove-project name="android_build" />
     <remove-project name="android_external_skia" />
@@ -12,12 +16,15 @@
     <remove-project name="android_packages_apps_DUI" />
     <remove-project name="android_packages_apps_DU-Tweaks" />
     <remove-project name="android_system_core" />
+    <remove-project name="android_system_extras" />
+    <remove-project name="android_system_sepolicy" />
     <remove-project name="android_vendor_du" />
     <remove-project name="DirtyUnicorns/android_device_huawei_angler" />
+    <remove-project name="DirtyUnicorns/android_vendor_huawei" />
     <remove-project name="platform/external/sqlite" />
     <remove-project name="platform/external/zlib" />
 
-    <!-- Add my repos -->
+    <!-- Forked DU repos -->
     <project path="build" name="android_build" remote="nathanchance">
         <copyfile src="core/root.mk" dest="Makefile" />
     </project>
@@ -31,5 +38,14 @@
     <project path="packages/apps/DU-Tweaks" name="android_packages_apps_DU-Tweaks" remote="nathanchance" />
     <project path="prebuilts/clang/host/linux-x86/sdclang-3.8" name="prebuilts_clang_host_linux-x86_sdclang-3.8" remote="nathanchance" />
     <project path="system/core" name="android_system_core" remote="nathanchance" />
+    <project path="system/extras" name="android_system_extras" remote="nathanchance" />
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="nathanchance" />
     <project path="vendor/du" name="android_vendor_du" remote="nathanchance" />
+    <project path="vendor/huawei" name="android_vendor_huawei" remote="nathanchance" />
+
+    <!-- Open GApps -->
+    <project path="vendor/google/build" name="aosp_build" remote="opengapps" />
+    <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" remote="opengapps" />
+    <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" remote="opengapps" />
+    <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" remote="opengapps" />
 </manifest>
