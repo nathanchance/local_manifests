@@ -10,6 +10,7 @@
 
     <!-- Remove projects -->
     <remove-project name="android_build" />
+    <remove-project name="android_bionic" />
     <remove-project name="android_external_skia" />
     <remove-project name="android_frameworks_base" />
     <remove-project name="android_frameworks_native" />
@@ -36,6 +37,7 @@
     <project path="build" name="android_build" remote="nathanchance">
         <copyfile src="core/root.mk" dest="Makefile" />
     </project>
+    <project path="bionic" name="android_bionic" remote="nathanchance" />
     <project path="device/huawei/angler" name="android_device_huawei_angler" remote="nathanchance" />
     <project path="external/skia" name="android_external_skia" remote="nathanchance" />
     <project path="external/sqlite" name="android_external_sqlite" remote="nathanchance" />
