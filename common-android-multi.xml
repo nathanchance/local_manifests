@@ -4,6 +4,7 @@
 
   <project path="upstream" name="kernel/common" revision="upstream-master" />
   <project path="common-mainline" name="kernel/common" revision="android-mainline" />
+  <project path="common16-6.12" name="kernel/common" revision="android16-6.12" />
   <project path="common15-6.6" name="kernel/common" revision="android15-6.6" />
   <project path="common14-6.1" name="kernel/common" revision="android14-6.1" />
   <project path="common14-5.15" name="kernel/common" revision="android14-5.15" />
@@ -12,5 +13,4 @@
   <project path="common12-5.10" name="kernel/common" revision="android12-5.10" />
   <project path="common12-5.4" name="kernel/common" revision="android12-5.4" />
   <project path="common11-5.4" name="kernel/common" revision="android11-5.4" />
-  <project path="common-4.19-stable" name="kernel/common" revision="android-4.19-stable" />
 </manifest>
