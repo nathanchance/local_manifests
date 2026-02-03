@@ -3,7 +3,8 @@
   <remove-project name="kernel/common" />
 
   <project path="upstream" name="kernel/common" revision="upstream-master" />
-  <project path="common-mainline" name="kernel/common" revision="android-mainline" />
+  <project path="common" name="kernel/common" revision="android-mainline" />
+  <project path="common17-6.18" name="kernel/common" revision="android17-6.18" />
   <project path="common16-6.12" name="kernel/common" revision="android16-6.12" />
   <project path="common15-6.6" name="kernel/common" revision="android15-6.6" />
   <project path="common14-6.1" name="kernel/common" revision="android14-6.1" />
